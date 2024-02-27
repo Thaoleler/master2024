@@ -1,0 +1,69 @@
+{
+  "graph": {
+    "type": "account",
+    "nodeId": "v5f1s",
+    "label": "LinkedIn",
+    "children": [
+      {
+        "type": "operator",
+        "value": "|",
+        "nodeId": "3raty",
+        "children": [
+          {
+            "type": "operator",
+            "value": "&",
+            "nodeId": "r1goy",
+            "children": [
+              {
+                "type": "authentication",
+                "value": "knowledge",
+                "nodeId": "password",
+                "score": 1,
+                "devices": [
+                  "p1"
+                ],
+                "label": "Password"
+              }
+            ]
+          },
+          {
+            "type": "operator",
+            "value": "|",
+            "nodeId": "q9rkv",
+            "children": [
+              {
+                "type": "authentication",
+                "nodeId": "fallback_email",
+                "score": 1,
+                "label": "Fallback email",
+                "devices": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "devices": [
+    {
+      "id": "mem1",
+      "label": "Memory"
+    },
+    {
+      "id": "pap1",
+      "label": "Paper"
+    },
+    {
+      "id": "p1",
+      "label": "Phone 1"
+    },
+    {
+      "id": "c1",
+      "label": "Computer 1"
+    },
+    {
+      "id": "sw1",
+      "label": "SmartWatch 1"
+    }
+  ]
+}

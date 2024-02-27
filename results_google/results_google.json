@@ -1,0 +1,2817 @@
+[
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1",
+                    "p1",
+                    "c1",
+                    "c2",
+                    "c3"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      },
+      {
+        "id": "c3",
+        "label": "Computer 3"
+      },
+      {
+        "id": "sw1",
+        "label": "SmartWatch 1"
+      }
+    ],
+    "id": "1"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "p1",
+                    "p2",
+                    "c2"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1",
+                        "p2",
+                        "t1"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_auth_app",
+                      "score": 2,
+                      "devices": [
+                        "p1",
+                        "p2"
+                      ],
+                      "label": "Authenticator app"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "hardware",
+                      "nodeId": "2fa_security_key",
+                      "score": 3,
+                      "devices": [
+                        "s1"
+                      ],
+                      "label": "Security key"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "authentication",
+              "value": "hardware",
+              "nodeId": "Passkeys",
+              "score": 3,
+              "devices": [
+                "p1",
+                "p2",
+                "t1"
+              ],
+              "label": "Passkeys"
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "p2",
+        "label": "Phone 2"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      },
+      {
+        "id": "t1",
+        "label": "Tablet 1"
+      },
+      {
+        "id": "s1",
+        "label": "SecKey 1"
+      }
+    ],
+    "id": "2"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Google prompts"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "authentication",
+              "value": "hardware",
+              "nodeId": "Passkeys",
+              "score": 3,
+              "devices": [
+                "p1",
+                "c1",
+                "c2"
+              ],
+              "label": "Passkeys"
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      },
+      {
+        "id": "sw1",
+        "label": "SmartWatch 1"
+      }
+    ],
+    "id": "3"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      }
+    ],
+    "id": "4"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1",
+                    "c1",
+                    "p1"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1",
+                        "p2"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_auth_app",
+                      "score": 2,
+                      "devices": [
+                        "p1",
+                        "p2"
+                      ],
+                      "label": "Authenticator app"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "p2",
+        "label": "Phone 2"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      }
+    ],
+    "id": "6"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1",
+                    "p1",
+                    "p2",
+                    "p3",
+                    "c1",
+                    "c2",
+                    "c3",
+                    "t1"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "hardware",
+                      "nodeId": "2fa_backup_codes",
+                      "score": 3,
+                      "label": "Backup codes",
+                      "devices": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "p2",
+        "label": "Phone 2"
+      },
+      {
+        "id": "p3",
+        "label": "Phone 3"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      },
+      {
+        "id": "t1",
+        "label": "Tablet 1"
+      },
+      {
+        "id": "sw1",
+        "label": "SmartWatch 1"
+      }
+    ],
+    "id": "7"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "pap1",
+                    "p1",
+                    "c1"
+                  ],
+                  "label": "Password"
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      },
+      {
+        "id": "t1",
+        "label": "Tablet 1"
+      },
+      {
+        "id": "sw1",
+        "label": "SmartWatch 1"
+      }
+    ],
+    "id": "9"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1"
+                  ],
+                  "label": "Password"
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "sw1",
+        "label": "SmartWatch 1"
+      }
+    ],
+    "id": "10"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "p1",
+                    "c1",
+                    "c2"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_auth_app",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Authenticator app"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      }
+    ],
+    "id": "12"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "p1",
+                    "c1"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Google prompts"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      }
+    ],
+    "id": "13"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_auth_app",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Authenticator app"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      },
+      {
+        "id": "sw1",
+        "label": "SmartWatch 1"
+      }
+    ],
+    "id": "15"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1",
+                    "p1",
+                    "c1",
+                    "c2",
+                    "c3"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1",
+                        "t1"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "hardware",
+                      "nodeId": "2fa_backup_codes",
+                      "score": 3,
+                      "label": "Backup codes",
+                      "devices": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      },
+      {
+        "id": "t1",
+        "label": "Tablet 1"
+      }
+    ],
+    "id": "17"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1",
+                        "t1"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      },
+      {
+        "id": "c3",
+        "label": "Computer 3"
+      },
+      {
+        "id": "t1",
+        "label": "Tablet 1"
+      }
+    ],
+    "id": "18"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1",
+                        "t1"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "t1",
+        "label": "Tablet 1"
+      },
+      {
+        "id": "sw1",
+        "label": "SmartWatch 1"
+      }
+    ],
+    "id": "19"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1",
+                    "p1",
+                    "c1",
+                    "c2"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_auth_app",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Authenticator app"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "p2",
+        "label": "Phone 2"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      }
+    ],
+    "id": "20"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_auth_app",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Authenticator app"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "sw1",
+        "label": "SmartWatch 1"
+      }
+    ],
+    "id": "21"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1",
+                    "p1"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      },
+      {
+        "id": "c3",
+        "label": "Computer 3"
+      },
+      {
+        "id": "s1",
+        "label": "SecKey 1"
+      }
+    ],
+    "id": "22"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "c1",
+                    "c2",
+                    "c3",
+                    "p1"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_auth_app",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Authenticator app"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      },
+      {
+        "id": "c3",
+        "label": "Computer 3"
+      }
+    ],
+    "id": "23"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "sw1",
+        "label": "SmartWatch 1"
+      }
+    ],
+    "id": "25"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "p1",
+                    "c1"
+                  ],
+                  "label": "Password"
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "sw1",
+        "label": "SmartWatch 1"
+      }
+    ],
+    "id": "26"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "p1",
+                    "c1",
+                    "c2"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_auth_app",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Authenticator app"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "hardware",
+                      "nodeId": "2fa_backup_codes",
+                      "score": 3,
+                      "label": "Backup codes",
+                      "devices": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      }
+    ],
+    "id": "27"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      },
+      {
+        "id": "t1",
+        "label": "Tablet 1"
+      }
+    ],
+    "id": "28"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "p1",
+                    "c1",
+                    "t1"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_prompts",
+                      "score": 2,
+                      "devices": [
+                        "p1",
+                        "t1"
+                      ],
+                      "label": "Google prompts"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "t1",
+        "label": "Tablet 1"
+      },
+      {
+        "id": "sw1",
+        "label": "SmartWatch 1"
+      }
+    ],
+    "id": "29"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1",
+                    "p1",
+                    "c1",
+                    "c3"
+                  ],
+                  "label": "Password"
+                },
+                {
+                  "type": "operator",
+                  "value": "|",
+                  "score": 1,
+                  "nodeId": "15y00",
+                  "children": [
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_auth_app",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Authenticator app"
+                    },
+                    {
+                      "type": "authentication",
+                      "value": "software",
+                      "nodeId": "2fa_phone",
+                      "score": 2,
+                      "devices": [
+                        "p1"
+                      ],
+                      "label": "Voice or SMS"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "software",
+                  "nodeId": "recovery_phone",
+                  "score": 2,
+                  "devices": [
+                    "p1"
+                  ],
+                  "label": "Recovery phone"
+                },
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "c2",
+        "label": "Computer 2"
+      },
+      {
+        "id": "c3",
+        "label": "Computer 3"
+      }
+    ],
+    "id": "30"
+  },
+  {
+    "graph": {
+      "type": "account",
+      "nodeId": "l1icq",
+      "label": "Google",
+      "children": [
+        {
+          "type": "operator",
+          "value": "|",
+          "nodeId": "wmo68",
+          "score": 1,
+          "children": [
+            {
+              "type": "operator",
+              "value": "&",
+              "nodeId": "8lfuy",
+              "score": 2,
+              "children": [
+                {
+                  "type": "authentication",
+                  "value": "knowledge",
+                  "nodeId": "password",
+                  "score": 1,
+                  "devices": [
+                    "mem1",
+                    "p1",
+                    "c1"
+                  ],
+                  "label": "Password"
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "value": "|",
+              "nodeId": "uegl6",
+              "score": 1,
+              "children": [
+                {
+                  "type": "authentication",
+                  "nodeId": "recovery_email",
+                  "score": 1,
+                  "devices": [],
+                  "label": "Recovery email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "devices": [
+      {
+        "id": "mem1",
+        "label": "Memory"
+      },
+      {
+        "id": "pap1",
+        "label": "Paper"
+      },
+      {
+        "id": "p1",
+        "label": "Phone 1"
+      },
+      {
+        "id": "c1",
+        "label": "Computer 1"
+      },
+      {
+        "id": "t1",
+        "label": "Tablet 1"
+      }
+    ],
+    "id": "32"
+  }
+]
