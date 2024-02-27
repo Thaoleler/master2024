@@ -1,0 +1,135 @@
+{
+  "graph":{
+  "type":"account",
+  "nodeId":"u8ng2",
+  "label":"Apple",
+  "children":[
+    {
+      "type":"operator",
+      "value":"|",
+      "nodeId":"oh71b",
+      "children":[
+        {
+          "type":"operator",
+          "value":"&",
+          "nodeId":"aqwe6",
+          "children":[
+            {"type":"authentication",
+              "value":"knowledge",
+              "nodeId":"password",
+              "score":1,
+              "devices":["mem1","pap1"],
+              "label":"Password"},
+              {
+                "type":"operator",
+                "value":"|",
+                "nodeId":"833x1",
+                "children":[
+                  {
+                    "type":"authentication",
+                    "value":"software",
+                    "nodeId":"trusted_phone",
+                    "score":2,
+                    "devices":["p1", "p2", "p3"],
+                    "label":"Trusted phone nr."},
+                  {
+                    "type":"authentication",
+                    "value":"software",
+                    "nodeId":"trusted_device",
+                    "score":2,
+                    "devices":["p1", "p2", "p3", "c1", "c2", "c3", "t1", "t2", "sw1", "sw2"],
+                    "label":"Trusted device"},
+                  {
+                    "type":"authentication",
+                    "value":"hardware",
+                    "nodeId":"security_key",
+                    "score":3,
+                    "devices":["sw1", "sw2"],
+                    "label":"Security key"}
+                ]
+              }
+            ]
+          },
+        {
+          "type":"operator",
+          "value":"|",
+          "nodeId":"lar90",
+          "children":[
+            {
+              "type":"authentication",
+              "value":"software",
+              "nodeId":"recovery_contact",
+              "score":2,
+              "label":"Recovery contact"},
+            {
+              "type":"authentication",
+              "value":"hardware",
+              "nodeId":"recovery_key",
+              "score":3,
+              "devices":["p1", "p2", "p3", "c1", "c2", "c3", "t1", "t2"],
+              "label":"Recovery keys"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "devices": [
+    {
+      "id": "mem1",
+      "label": "Memory"
+    },
+    {
+      "id": "pap1",
+      "label": "Paper"
+    },
+    {
+      "id": "p1",
+      "label": "Phone 1"
+    },
+    {
+      "id": "p2",
+      "label": "Phone 2"
+    },
+    {
+      "id": "p3",
+      "label": "Phone 3"
+    },
+    {
+      "id": "c1",
+      "label": "Computer 1"
+    },
+    {
+      "id": "c2",
+      "label": "Computer 2"
+    },
+    {
+      "id": "c3",
+      "label": "Computer 3"
+    },
+    {
+      "id": "t1",
+      "label": "Tablet 1"
+    },
+    {
+      "id": "t2",
+      "label": "Tablet 2"
+    },
+    {
+      "id": "sw1",
+      "label": "SmartWatch 1"
+    },
+    {
+      "id": "sw2",
+      "label": "SmartWatch 2"
+    },
+    {
+      "id": "s1",
+      "label": "SecKey 1"
+    },
+    {
+      "id": "s2",
+      "label": "SecKey 2"
+    }
+  ]
+}

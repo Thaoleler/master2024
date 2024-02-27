@@ -1,0 +1,148 @@
+{
+  "graph":{
+  "type":"account",
+  "nodeId":"1sdew",
+  "label":"GitHub",
+  "children":[
+    {
+      "type":"operator",
+      "value":"|",
+      "nodeId":"qjsqo",
+      "children":[
+        {
+          "type":"operator",
+          "value":"&",
+          "nodeId":"v7vg3",
+          "children":[
+            {"type":"authentication",
+              "value":"knowledge",
+              "nodeId":"password",
+              "score":1,
+              "devices":["mem1", "pap1"],
+              "label":"Password"},
+            {
+              "type":"operator",
+              "value":"|",
+              "nodeId":"knkay",
+              "children":[
+                {
+                  "type":"authentication",
+                  "value":"software",
+                  "nodeId":"2fa_auth_app",
+                  "score":2,
+                  "devices":["p1", "p2", "p3", "c1", "c2", "c3", "t1", "t2"],
+                  "label":"Authenticator app"},
+                {
+                  "type":"authentication",
+                  "value":"software",
+                  "nodeId":"2fa_phone",
+                  "score":2,
+                  "devices":["p1", "p2", "p3"],
+                  "label":"SMS/Text"},
+                {
+                  "type":"authentication",
+                  "value":"hardware",
+                  "nodeId":"2fa_security_key",
+                  "score":3,
+                  "devices":["s1", "s2", "p1", "p2", "p3", "c1", "c2", "c3", "t1", "t2"],
+                  "label":"Security keys"},
+                {
+                  "type":"authentication",
+                  "value":"software",
+                  "nodeId":"2fa_githubmobile",
+                  "score":2,
+                  "devices":["p1", "p2", "p3"],
+                  "label":"GitHub Mobile"}
+                ]
+              }
+            ]
+          },
+        {
+          "type":"authentication",
+          "value":"hardware",
+          "nodeId":"av7p8",
+          "score":3,
+          "devices":["p1", "p2", "p3", "c1", "c2", "c3", "t1", "t2"],
+          "label":"Passkeys"},
+        {
+          "type":"operator",
+          "value":"|",
+          "nodeId":"99yvz",
+          "children":[
+            {
+              "type":"authentication",
+              "nodeId":"recovery_email",
+              "score":1,
+              "label":"Primary email"},
+            {
+              "type":"authentication",
+              "value":"hardware",
+              "nodeId":"recovery_codes",
+              "score":3,
+              "devices":["p1", "p2", "p3", "c1", "c2", "c3", "t1", "t2", "o"],
+              "label":"Recovery codes"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "devices": [
+    {
+      "id": "mem1",
+      "label": "Memory"
+    },
+    {
+      "id": "pap1",
+      "label": "Paper"
+    },
+    {
+      "id": "p1",
+      "label": "Phone 1"
+    },
+    {
+      "id": "p2",
+      "label": "Phone 2"
+    },
+    {
+      "id": "p3",
+      "label": "Phone 3"
+    },
+    {
+      "id": "c1",
+      "label": "Computer 1"
+    },
+    {
+      "id": "c2",
+      "label": "Computer 2"
+    },
+    {
+      "id": "c3",
+      "label": "Computer 3"
+    },
+    {
+      "id": "t1",
+      "label": "Tablet 1"
+    },
+    {
+      "id": "t2",
+      "label": "Tablet 2"
+    },
+    {
+      "id": "sw1",
+      "label": "SmartWatch 1"
+    },
+    {
+      "id": "sw2",
+      "label": "SmartWatch 2"
+    },
+    {
+      "id": "s1",
+      "label": "SecKey 1"
+    },
+    {
+      "id": "s2",
+      "label": "SecKey 2"
+    }
+  ]
+}
