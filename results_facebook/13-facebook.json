@@ -1,0 +1,86 @@
+{
+  "graph": {
+    "type": "account",
+    "nodeId": "9w6np",
+    "label": "Facebook",
+    "children": [
+      {
+        "type": "operator",
+        "value": "|",
+        "nodeId": "23uwb",
+        "children": [
+          {
+            "type": "operator",
+            "value": "&",
+            "nodeId": "s0d4v",
+            "children": [
+              {
+                "type": "authentication",
+                "value": "knowledge",
+                "nodeId": "password",
+                "score": 1,
+                "devices": [
+                  "p1",
+                  "c1"
+                ],
+                "label": "Password"
+              },
+              {
+                "type": "operator",
+                "value": "|",
+                "nodeId": "6ypfy",
+                "children": [
+                  {
+                    "type": "authentication",
+                    "value": "software",
+                    "nodeId": "2fa_auth_app",
+                    "score": 2,
+                    "devices": [
+                      "p1"
+                    ],
+                    "label": "Authenticator app"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "operator",
+            "value": "|",
+            "nodeId": "cjjir",
+            "children": [
+              {
+                "type": "authentication",
+                "value": "software",
+                "nodeId": "fallback_phone",
+                "score": 2,
+                "devices": [
+                  "p1"
+                ],
+                "label": "Registred phone"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "devices": [
+    {
+      "id": "mem1",
+      "label": "Memory"
+    },
+    {
+      "id": "pap1",
+      "label": "Paper"
+    },
+    {
+      "id": "p1",
+      "label": "Phone 1"
+    },
+    {
+      "id": "c1",
+      "label": "Computer 1"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "graph": {
+    "type": "account",
+    "nodeId": "1sdew",
+    "label": "GitHub",
+    "children": [
+      {
+        "type": "operator",
+        "value": "|",
+        "nodeId": "qjsqo",
+        "children": [
+          {
+            "type": "operator",
+            "value": "&",
+            "nodeId": "v7vg3",
+            "children": [
+              {
+                "type": "authentication",
+                "value": "knowledge",
+                "nodeId": "password",
+                "score": 1,
+                "devices": [
+                  "mem1"
+                ],
+                "label": "Password"
+              }
+            ]
+          },
+          {
+            "type": "operator",
+            "value": "|",
+            "nodeId": "99yvz",
+            "children": [
+              {
+                "type": "authentication",
+                "nodeId": "recovery_email",
+                "score": 1,
+                "label": "Primary email",
+                "devices": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "devices": [
+    {
+      "id": "mem1",
+      "label": "Memory"
+    },
+    {
+      "id": "pap1",
+      "label": "Paper"
+    },
+    {
+      "id": "p1",
+      "label": "Phone 1"
+    },
+    {
+      "id": "sw1",
+      "label": "SmartWatch 1"
+    }
+  ]
+}

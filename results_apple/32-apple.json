@@ -1,0 +1,93 @@
+{
+  "graph": {
+    "type": "account",
+    "nodeId": "u8ng2",
+    "label": "Apple",
+    "children": [
+      {
+        "type": "operator",
+        "value": "|",
+        "nodeId": "oh71b",
+        "children": [
+          {
+            "type": "operator",
+            "value": "&",
+            "nodeId": "aqwe6",
+            "children": [
+              {
+                "type": "authentication",
+                "value": "knowledge",
+                "nodeId": "password",
+                "score": 1,
+                "devices": [
+                  "mem1",
+                  "p1"
+                ],
+                "label": "Password"
+              },
+              {
+                "type": "operator",
+                "value": "|",
+                "nodeId": "833x1",
+                "children": [
+                  {
+                    "type": "authentication",
+                    "value": "software",
+                    "nodeId": "trusted_phone",
+                    "score": 2,
+                    "devices": [
+                      "p1"
+                    ],
+                    "label": "Trusted phone nr."
+                  },
+                  {
+                    "type": "authentication",
+                    "value": "software",
+                    "nodeId": "trusted_device",
+                    "score": 2,
+                    "devices": [
+                      "p1"
+                    ],
+                    "label": "Trusted device"
+                  },
+                  {
+                    "type": "authentication",
+                    "value": "hardware",
+                    "nodeId": "security_key",
+                    "score": 3,
+                    "devices": [
+                      "s1"
+                    ],
+                    "label": "Security key"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "devices": [
+    {
+      "id": "mem1",
+      "label": "Memory"
+    },
+    {
+      "id": "pap1",
+      "label": "Paper"
+    },
+    {
+      "id": "p1",
+      "label": "Phone 1"
+    },
+    {
+      "id": "c1",
+      "label": "Computer 1"
+    },
+    {
+      "id": "t1",
+      "label": "Tablet 1"
+    }
+  ]
+}
